@@ -16,9 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from shop.views import UserListView
+from shop.views import StartView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
-    path('shop/', include('shop.urls'))
+    path('shop/', include('shop.urls')),
 ]
