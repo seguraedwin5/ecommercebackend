@@ -28,7 +28,11 @@ SECRET_KEY = 'django-insecure-rr(2$rxi6rnw@xiz+8=0@uesuwvz2x98s(5(#auu$x15hhwd)l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '192.168.1.10',
+    'localhost',
+    '127.0.0.1'
+]
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
@@ -78,6 +82,8 @@ INSTALLED_APPS = [
 # for React
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
+     'http://192.168.1.10:8000'
+    
 )
 SITE_ID = 1
 
