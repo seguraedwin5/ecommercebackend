@@ -83,8 +83,8 @@ INSTALLED_APPS = [
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
      'http://192.168.1.10:8000',
-     'localhost',
-     '127.0.0.1'
+     'http://localhost',
+     'http://127.0.0.1'
     
 )
 SITE_ID = 1
